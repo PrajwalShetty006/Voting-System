@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background: linear-gradient(135deg , #00c6ff,#0072ff); */
+background-image: url("https://tse3.mm.bing.net/th/id/OIP.1QsC0r0lpntJ8ECAu-CwQgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
+background-repeat: no-repeat;
+background-size: cover;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    gap: 30px;
+    font-size: 1.5rem;
+     border-radius:50px ;
+     margin: 8rem;
+}
+.sub{
+    width: 150px;
+    height: 45px;
+    padding:10px 0px 10px 0px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+   
+   
+    
+}
+input::placeholder{
+    
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+.names , .emails {
+   background-color: white;
+   border-radius: 30px;
+   padding: 10px;
+   padding-left: 20px;
+}
+.names input ,.emails input{
+    width: 15rem;
+    border-radius: 20px;
+    height: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.sub:hover{
+    background-color: aqua;
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* input:hover{
+     background-color: aqua;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transfor 0s ease-in-out;
+} */
+
+.names:hover{
+     border: solid black 1px;
+      /* background-color: aqua; */
+    cursor: pointer;
+    transform: scale(1.1);
+      transition: all 0.5s ease;
+
+}
+.emails:hover{
+     border: solid black 1px;
+      /* background-color: aqua; */
+    cursor: pointer;
+    transform: scale(1.1);
+      transition: all 0.5s ease;
+}
+
+

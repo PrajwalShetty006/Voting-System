@@ -1,0 +1,110 @@
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+a{
+    text-decoration-line:none;
+    color: inherit;
+}
+body{
+    margin:0;
+    font-family: poppins,sans-serif;
+    background-color: rgb(254, 252, 246);
+    /* background-image: url("https://img.freepik.com/premium-vector/vector-election-vote-campaign-background_982116-51.jpg");
+    background-repeat: none;
+    background-size: cover; */
+}
+main{
+    padding: 20px;
+  
+}
+.header{
+    background-color: rgba(170, 170, 16, 0.577);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.header-content a{
+    margin-right: 10px;
+}
+
+
+.marquee {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.marquee--inner {
+  display: block;
+  width: 200%;
+  position: absolute;
+  animation: marquee 10s linear infinite;
+  /* &:hover {
+    animation-play-state: paused;
+    color: red;
+  } */
+}
+.marquee--inner h1{
+    font-weight:400;
+}
+
+.candidate-info{
+    font-family: poppins,sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    width: 60%;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: cornsilk;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 3rem;
+    padding: 1rem;
+
+}
+.live-result{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width:50%;
+    max-width: 900px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.candidate-info:hover{
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 2px;
+}
+
+.main-content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
